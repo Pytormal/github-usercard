@@ -1,8 +1,19 @@
+import axios from 'axios';
+
+
 /*
   STEP 1: using axios, send a GET request to the following URL
     (replacing the placeholder with your Github name):
     https://api.github.com/users/<your name>
 */
+axios
+  .get('https://api.github.com/users/Pytormal')
+  .then(response => {
+    // deal with the response data in here
+  })
+  .catch(err => {
+    // deal with the error in here
+  })
 
 /*
   STEP 2: Inspect and study the data coming back, this is YOUR
@@ -28,7 +39,7 @@
     user, and adding that card to the DOM.
 */
 
-const followersArray = [];
+// const followersArray = [];
 
 /*
   STEP 3: Create a function that accepts a single object as its only argument.
